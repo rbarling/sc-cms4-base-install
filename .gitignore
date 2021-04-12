@@ -1,0 +1,8 @@
+.env
+.env.example
+/.idea
+/public/_resources/
+/public/assets
+/silverstripe-cache/
+/themes/simple/
+/vendor/
