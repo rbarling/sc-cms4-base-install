@@ -1,6 +1,7 @@
 .env
 .env.example
 /.idea
+/_resources/
 /public/_resources/
 /public/assets
 /silverstripe-cache/
