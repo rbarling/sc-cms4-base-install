@@ -4,6 +4,10 @@ Name: myproject
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
 
+# Disable to avoid unnecessary error logging.
+SilverStripe\Raygun\RaygunHandler:
+  enabled: false
+
 # UTF8MB4 has limited support in older MySQL versions.
 # Remove this configuration if you experience issues.
 ---
