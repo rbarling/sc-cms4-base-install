@@ -16,7 +16,7 @@ SilverStripe\ORM\Connect\MySQLDatabase:
   collation: utf8mb4_unicode_ci
 
 ---
-Name: raygun
+After: raygun
 ---
 SilverStripe\Core\Injector\Injector:
   Raygun4php\RaygunClient
