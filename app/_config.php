@@ -10,5 +10,5 @@ $validator = PasswordValidator::create();
 // Settings are registered via Injector configuration - see passwords.yml in framework
 Member::set_password_validator($validator);
 
-$client = Injector::inst()->get(RaygunClient::class);
+$client = Injector::inst()->get(Raygun4php\RaygunClient::class);
 $client->SetVersion('123456');
