@@ -22,4 +22,4 @@ Name: raygun
 SilverStripe\Core\Injector\Injector:
   class: Raygun4php\RaygunClient
     properties:
-      version: 123456
+      version: '123456'
