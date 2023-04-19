@@ -5,15 +5,14 @@
     "require": {
         "php": "^7.1 || ^8",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.8.0@stable",
+        "silverstripe/recipe-cms": "~4.12.0@stable",
         "silverstripe-themes/simple": "~3.2.0",
-        "silverstripe/login-forms": "4.4.1@stable",
-        "silverstripe/crontask": "^2.2",
-        "silverstripe/dynamodb": "^4.0"
+        "silverstripe/login-forms": "~4.8.0@stable",
+        "silverstripe/crontask": "^2.5",
+        "silverstripe/dynamodb": "^4.1"
     },
     "require-dev": {
-        "sminnee/phpunit": "^5.7",
-        "sminnee/phpunit-mock-objects": "^3.4.5"
+        "phpunit/phpunit": "^9.5"
     },
     "extra": {
         "resources-dir": "_resources",
@@ -32,7 +31,12 @@
         ]
     },
     "config": {
-        "process-timeout": 600
+        "process-timeout": 600,
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
